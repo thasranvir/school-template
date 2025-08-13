@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>{{SCHOOL_NAME}} — School Management System</title>
+	<meta name="description" content="{{SCHOOL_NAME}} school management system portal: announcements, calendars, admissions, and student/parent/teacher access." />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css" />
+	<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+	<link rel="manifest" href="./manifest.webmanifest" />
+	<meta name="theme-color" content="#0D47A1" />
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to main content</a>
+	<header class="site-header" role="banner">
+		<div class="container header-inner">
+			<a class="brand" href="#" aria-label="{{SCHOOL_NAME}} home">
+				<img src="./assets/logo.svg" alt="{{SCHOOL_NAME}} logo" width="40" height="40" />
+				<span class="brand-text">{{SCHOOL_NAME}}</span>
+			</a>
+			<button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="nav-toggle-bar"></span>
+				<span class="nav-toggle-bar"></span>
+				<span class="nav-toggle-bar"></span>
+			</button>
+			<nav id="primary-nav" class="nav" role="navigation">
+				<ul class="nav-list">
+					<li><a href="#announcements">Announcements</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#calendar">Calendar</a></li>
+					<li><a href="#admissions">Admissions</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a class="btn btn-small" href="#login">Login</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main id="main">
+		<section class="hero" aria-label="Hero">
+			<div class="container hero-inner">
+				<div class="hero-copy">
+					<h1>Welcome to {{SCHOOL_NAME}}</h1>
+					<p>{{SCHOOL_TAGLINE}}</p>
+					<div class="hero-cta">
+						<a class="btn" href="#admissions">Start Admissions</a>
+						<a class="btn btn-outline" href="#learn-more">Learn More</a>
+					</div>
+				</div>
+				<div class="hero-visual" aria-hidden="true">
+					<img src="./assets/hero-illustration.svg" alt="" width="560" height="360" />
+				</div>
+			</div>
+		</section>
+
+		<section id="announcements" class="section">
+			<div class="container">
+				<h2>Latest Announcements</h2>
+				<ul class="cards" data-announcements>
+					<!-- Dynamically populated -->
+				</ul>
+			</div>
+		</section>
+
+		<section id="features" class="section alt">
+			<div class="container">
+				<h2>What you can do</h2>
+				<div class="features-grid">
+					<article class="feature">
+						<img src="./assets/icon-students.svg" alt="Students icon" width="48" height="48" />
+						<h3>Students</h3>
+						<p>Access timetables, grades, assignments, and attendance in one place.</p>
+					</article>
+					<article class="feature">
+						<img src="./assets/icon-parents.svg" alt="Parents icon" width="48" height="48" />
+						<h3>Parents</h3>
+						<p>Stay informed with progress reports, messaging, and fee payments.</p>
+					</article>
+					<article class="feature">
+						<img src="./assets/icon-teachers.svg" alt="Teachers icon" width="48" height="48" />
+						<h3>Teachers</h3>
+						<p>Manage classes, grade submissions, and communicate with families.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="calendar" class="section">
+			<div class="container">
+				<h2>Upcoming Events</h2>
+				<ul class="timeline" data-events>
+					<!-- Dynamically populated -->
+				</ul>
+				<a class="btn btn-outline" href="#">View full calendar</a>
+			</div>
+		</section>
+
+		<section id="admissions" class="section alt">
+			<div class="container">
+				<h2>Admissions</h2>
+				<p>Join our community of learners. Review requirements and key dates, then submit your application online.</p>
+				<div class="admissions-cta">
+					<a class="btn" href="#">Apply Now</a>
+					<a class="btn btn-outline" href="#">Download Prospectus</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="learn-more" class="section">
+			<div class="container">
+				<h2>Why choose us</h2>
+				<div class="grid-2">
+					<div>
+						<h3>Holistic education</h3>
+						<p>We balance academic excellence with arts, sports, and character development.</p>
+					</div>
+					<div>
+						<h3>Safe and inclusive</h3>
+						<p>Our campus fosters a welcoming, supportive environment for every student.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer id="contact" class="site-footer" role="contentinfo">
+		<div class="container footer-inner">
+			<div class="footer-brand">
+				<img src="./assets/logo.svg" alt="{{SCHOOL_NAME}} logo" width="40" height="40" />
+				<div>
+					<strong>{{SCHOOL_NAME}}</strong>
+					<p>{{SCHOOL_ADDRESS_LINE1}}<br />{{SCHOOL_ADDRESS_LINE2}}</p>
+				</div>
+			</div>
+			<nav class="footer-nav" aria-label="Footer">
+				<ul>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms of Service</a></li>
+					<li><a href="#">Support</a></li>
+				</ul>
+			</nav>
+			<form id="newsletter-form" class="newsletter" novalidate>
+				<label for="newsletter-email">Subscribe for updates</label>
+				<div class="newsletter-row">
+					<input id="newsletter-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="newsletter-help newsletter-error" />
+					<button class="btn" type="submit">Subscribe</button>
+				</div>
+				<p id="newsletter-help" class="help-text">We send occasional emails. Unsubscribe anytime.</p>
+				<p id="newsletter-error" class="error-text" role="alert" hidden></p>
+			</form>
+		</div>
+		<div class="container footer-bottom">
+			<p>© <span data-year></span> {{SCHOOL_NAME}}. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="./script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+[
+	{ "title": "Welcome back!", "body": "Classes resume on Monday. Please check your timetable.", "date": "2025-09-01", "type": "info" },
+	{ "title": "PTA Meeting", "body": "Parents and teachers meeting this Friday at 5 PM in the auditorium.", "date": "2025-08-29", "type": "success" },
+	{ "title": "Safety Drill", "body": "Campus-wide drill scheduled for Wednesday. Follow staff instructions.", "date": "2025-08-27", "type": "alert" }
+]
