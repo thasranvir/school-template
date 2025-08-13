@@ -1,0 +1,10 @@
+.login-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 64px);
+	padding: 16px;
+}
+.login-card { width: 400px; max-width: 100%; }
+.full { width: 100%; }
+.error { color: #c62828; margin-bottom: 8px; }
