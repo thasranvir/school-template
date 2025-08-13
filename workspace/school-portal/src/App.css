@@ -1,0 +1,55 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Layout */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+.navbar { position: sticky; top: 0; backdrop-filter: blur(6px); background: rgba(255,255,255,0.4); border-bottom: 1px solid rgba(0,0,0,0.06); margin-bottom: 1rem; }
+@media (prefers-color-scheme: dark) {
+  .navbar { background: rgba(17,24,39,0.5); border-bottom-color: rgba(255,255,255,0.08); }
+}
+.navbar .container { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.brand { font-weight: 800; letter-spacing: 0.4px; }
+.nav-links { display: flex; align-items: center; gap: 1rem; }
+.nav-links a { padding: 0.35rem 0.6rem; border-radius: 8px; }
+.nav-links .login-link { border: 1px solid rgba(0,0,0,0.12); }
+.footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.08); color: #888; text-align: left; }
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
