@@ -1,0 +1,13 @@
+{
+	"name": "{{SCHOOL_NAME}} — School Management System",
+	"short_name": "{{SCHOOL_SHORT}}",
+	"description": "Homepage for {{SCHOOL_NAME}} school management system.",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#0D47A1",
+	"icons": [
+		{ "src": "./assets/favicon.svg", "sizes": "any", "purpose": "any maskable", "type": "image/svg+xml" },
+		{ "src": "./assets/logo.svg", "sizes": "any", "purpose": "any", "type": "image/svg+xml" }
+	]
+}
